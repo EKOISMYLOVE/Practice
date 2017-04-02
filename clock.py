@@ -11,7 +11,7 @@ import thread
 
 def print_time (delay):
 	while True:
-		time.sleep(1)
+		time.sleep(0.5)
 		label.configure(text=time.strftime("%Y-%m-%d %H:%M:%S" , time.localtime()))
 
 root=Tk()
