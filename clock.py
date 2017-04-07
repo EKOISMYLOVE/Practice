@@ -11,11 +11,11 @@ import thread
 
 def print_time (delay):
 	while True:
-		time.sleep(0.5)
+		time.sleep(0.1)
 		label.configure(text=time.strftime("%Y-%m-%d %H:%M:%S" , time.localtime()))
 
 root=Tk()
-root.title("Data & Time")
+root.title("Date & Time")
 root.minsize(300,25)
 label=Label(root,text=time.strftime("%Y-%m-%d %H:%M:%S" , time.localtime()))
 label.pack()
